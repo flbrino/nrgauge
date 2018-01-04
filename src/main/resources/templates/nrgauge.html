@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>NrGauge Dashboard</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!--<meta http-equiv="refresh" content="3" />-->
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/state.js"></script>
+</head>
+<body>
+<div class="content">
+  <h1> NRGauge State Dashboard </h1>
+  <div class="dashboard">
+    <div class="gadget1">
+      <img class="gadgetImg" src="images/gadget1.jpg" alt="Laptop" />
+      <div class="gadgetState" th:if="${value01}">
+        <img class="stateImg" id="gadgetState1" src="images/on.png" alt="gadget1" />
+      </div>
+      <div class="gadgetState" th:unless="${value01}">
+        <img class="stateImg" id="gadgetState1" src="images/off.png" alt="gadget1" />
+      </div>
+    </div>
+
+
+    <div class="gadget2">
+      <img class="gadgetImg" src="images/gadget2.jpg" alt="Lamp" />
+      <div class="gadgetState" th:if="${value02}">
+        <img class="stateImg" id="gadgetState2" src="images/on.png" alt="gadget2" />
+      </div>
+      <div class="gadgetState" th:unless="${value02}">
+        <img class="stateImg" id="gadgetState2" src="images/off.png" alt="gadget2" />
+      </div>
+    </div>
+
+    <div class="gadget3">
+      <img class="gadgetImg" src="images/gadget3.jpg" alt="Iron Welding" />
+      <div class="gadgetState" th:if="${value03}">
+        <img class="stateImg" id="gadgetState3" src="images/on.png" alt="gadget3" />
+      </div>
+      <div class="gadgetState" th:unless="${value03}">
+        <img class="stateImg" id="gadgetState3" src="images/off.png" alt="gadget3" />
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-footer">
+    <footer>
+      @ 2018 Hitachi | NrGauge - Pentaho Hackathon 2018 | Francisco Câmara - João Figueiredo - Luís Martins - João França
+    </footer>
+  </div>
+</div>
+</body>
+</html>

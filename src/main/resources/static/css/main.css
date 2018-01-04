@@ -1,0 +1,77 @@
+html{
+  font-size: 62.5%;
+  cursor: default;
+  line-height: 1.5;
+  box-sizing: border-box;
+
+  background: url('../images/background_1920_1440.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+body, html {
+  height:100%;
+}
+body {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: white;
+  height: 100%;
+}
+.gadget1 {
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+.gadget2 {
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+.gadget3 {
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+.gadgetImg {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+  height: 113px;
+}
+.gadgetState {
+  position: absolute;
+  top:75px;
+  right:4px;
+}
+.stateImg {
+  border: 0px;
+  width: 40px;
+  height: 40px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.dashboard {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.dashboard-footer {
+  background: #262626;
+  text-transform: uppercase;
+  padding: 1.4rem;
+  color: #b3b3b3;
+  text-align: center;
+}
+footer {
+  display: block;
+}
